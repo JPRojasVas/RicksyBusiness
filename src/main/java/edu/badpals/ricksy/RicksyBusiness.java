@@ -21,7 +21,7 @@
  * componente receptivo, de modo que cuando el receptivo
  * da de alta a un invitado/a automáticamente cargan
  * en la tarjeta del invitado/a el coste de ambos servicios.
-
+ */
 
 package edu.badpals.ricksy;
 
@@ -34,7 +34,7 @@ public class RicksyBusiness {
          * Crea una tarjeta de crédito para Abradolph.
          * Como es una AndromedanExpress
          * el crédito inicial es de 3000 EZIS
-
+         */
 
         CreditCard abradolph = new CreditCard("Abradolph Lincler", "4916119711304546");
 
@@ -50,7 +50,7 @@ public class RicksyBusiness {
          * Si hay saldo suficiente se reserva un UberOvni
          * de los que estén libres.
          * El coste del ovni es de 500 EZIs.
-
+         */
 
         UfosPark ufosPark = new UfosPark();
 
@@ -130,7 +130,7 @@ public class RicksyBusiness {
          * Construye el dispensador de packs de bienvenida.
          * Indica el numero de unidades y el coste de cada
          * uno de ellos, que es de 50 EZIs
-
+         */
 
         CrystalExpender packExpender = new CrystalExpender(3, 50);
 
@@ -163,7 +163,7 @@ public class RicksyBusiness {
          * Para ello, crea el componente receptivo
          * y registra (añade) los componentes UfosPark
          * y CrystalDispatcher al receptivo
-
+         */
 
         Receptivo receptivo = new Receptivo();
         receptivo.registra(packExpender);
@@ -218,7 +218,7 @@ public class RicksyBusiness {
          * Hay 100 RickMenús y su precio es de 10 EZIs.
          * Muestra el total de pedidos y la lista de
          * invitados/as que han hecho un pedido.
-
+         */
 
         // tu código aquí
         RickMenus rickmenu = new RickMenus(100,10);
@@ -239,4 +239,3 @@ public class RicksyBusiness {
         System.out.println("Ovni: " + ufos.getUfoOf(card.number()));
     }
 }
- */
