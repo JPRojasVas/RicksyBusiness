@@ -1,8 +1,5 @@
 package edu.badpals.ricksy;
 
-import edu.badpals.ricksy.CreditCard;
-import edu.badpals.ricksy.GuestDispatcher;
-
 import java.util.ArrayList;
 import java.util.List;
 
